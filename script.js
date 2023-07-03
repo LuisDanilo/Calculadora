@@ -83,6 +83,26 @@ function toKg() {
     }
 }
 
+// To cm logic
+function toCm() {
+    if (result.value != "") {
+        let result2 = result.value;
+        result.value = eval(`${result2}*100`)
+    } else {
+        alert("Error, ingrese valores válidos")
+    }
+}
+
+// To m logic
+function toM() {
+    if (result.value != "") {
+        let result2 = result.value;
+        result.value = eval(`${result2}/100`)
+    } else {
+        alert("Error, ingrese valores válidos")
+    }
+}
+
 // Reset button
 function reset() {
     result.value = "";
