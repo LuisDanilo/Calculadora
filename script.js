@@ -63,6 +63,26 @@ function toBar() {
     }
 }
 
+// To gr logic
+function toGr() {
+    if (result.value != "") {
+        let result2 = result.value;
+        result.value = eval(`${result2}*1000`)
+    } else {
+        alert("Error, ingrese valores válidos")
+    }
+}
+
+// To kg logic
+function toKg() {
+    if (result.value != "") {
+        let result2 = result.value;
+        result.value = eval(`${result2}/1000`)
+    } else {
+        alert("Error, ingrese valores válidos")
+    }
+}
+
 // Reset button
 function reset() {
     result.value = "";
