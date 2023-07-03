@@ -23,6 +23,26 @@ function calc() {
     }
 }
 
+// To celsius logic
+function toCelsius() {
+    if (result.value != "") {
+        let result2 = result.value;
+        result.value = eval(`(${result2}-32)*(5/9)`)
+    } else {
+        alert("Error, ingrese valores válidos")
+    }
+}
+
+// To fahrenheit logic
+function toFahrenheit() {
+    if (result.value != "") {
+        let result2 = result.value;
+        result.value = eval(`(${result2}*(9/5))+32`)
+    } else {
+        alert("Error, ingrese valores válidos")
+    }
+}
+
 // Reset button
 function reset() {
     result.value = "";
