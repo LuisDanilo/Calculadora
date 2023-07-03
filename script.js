@@ -43,6 +43,26 @@ function toFahrenheit() {
     }
 }
 
+// To pascal logic
+function toPascal() {
+    if (result.value != "") {
+        let result2 = result.value;
+        result.value = eval(`${result2}*100000`)
+    } else {
+        alert("Error, ingrese valores válidos")
+    }
+}
+
+// To bar logic
+function toBar() {
+    if (result.value != "") {
+        let result2 = result.value;
+        result.value = eval(`${result2}/100000`)
+    } else {
+        alert("Error, ingrese valores válidos")
+    }
+}
+
 // Reset button
 function reset() {
     result.value = "";
